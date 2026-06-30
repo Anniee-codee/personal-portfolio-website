@@ -647,8 +647,9 @@ img { max-width: 100%; display: block; }
 .projects { background: var(--white); }
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 24px;
+  
 }
 .project-card.big {
   grid-column: 1 / 2;
@@ -660,7 +661,11 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   transition: var(--transition);
 }
-.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.project-card:hover { 
+ transform: translateY(-8px);
+ box-shadow: var(--shadow-hover);
+    }
+    
 .project-img {
   position: relative;
   height: 220px;
@@ -730,7 +735,10 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.5px;
   z-index: 2;
 }
-.award-badge { background: #fff; }
+.award-badge { 
+  background: #fff;
+  color: #0a1628;
+ }
 .coming-badge { background: #444; color: #fff; }
 
 .project-info { padding: 20px 22px; }
@@ -1091,3 +1099,137 @@ img { max-width: 100%; display: block; }
      .canva-grid { grid-template-columns: repeat(2, 1fr); }
      .canva-card:last-child { grid-column: 1 / -1; max-width: 400px; margin: 0 auto; }
    }
+
+   /* ===========================
+   DARK / LIGHT MODE
+   =========================== */
+
+/* Dark mode overrides */
+body.dark-mode {
+  --gray: #12151e;
+  --gray-2: #1e2230;
+  --white: #1a1d2a;
+  --dark: #f5f0e8;
+  --dark-2: #c8c0b0;
+  --muted: #6a7080;
+  background: #12151e;
+  color: #f5f0e8;
+}
+
+body.dark-mode .navbar.scrolled {
+  background: rgba(18, 21, 30, 0.95);
+}
+
+body.dark-mode .nav-logo {
+  color: #f5f0e8;
+}
+
+body.dark-mode .footer-logo {
+  color: #f5f0e8;
+}
+
+body.dark-mode .nav-link {
+  color: #c8c0b0;
+}
+
+body.dark-mode .about {
+  background: #1a1d2a;
+}
+
+body.dark-mode .about-card {
+  background: #12151e;
+}
+
+body.dark-mode .about-card:hover {
+  background: #1e2a14;
+}
+
+body.dark-mode .skill-card {
+  background: #1a1d2a;
+  border: 1px solid #2a2d3a;
+}
+
+body.dark-mode .skill-card:hover {
+  background: #f4b000;
+}
+
+body.dark-mode .tool-pill {
+  background: #1a1d2a;
+  border-color: #2a2d3a;
+  color: #c8c0b0;
+}
+
+/* body.dark-mode .project-card {
+  background: #1a1d2a;
+} */
+
+body.dark-mode .experience {
+  background: #1a1d2a;
+}
+
+body.dark-mode .contact {
+  background: #12151e;
+}
+
+body.dark-mode .contact-row {
+  background: #1a1d2a;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #1a1d2a;
+  color: #f5f0e8;
+  border-color: #2a2d3a;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  background: #12151e;
+  border-color: #f4b000;
+}
+
+body.dark-mode .footer {
+  background: #0a0c12;
+}
+
+body.dark-mode .about-img-box,
+body.dark-mode .hero-img-placeholder {
+  background: #1a1d2a;
+  border-color: #2a2d3a;
+}
+
+.hero-badge {
+  color: #0a1628;
+}
+
+.ptag {
+   color: #0a1628;
+}
+
+.canva-tag {
+  color: #0a1628;
+}
+
+/* Toggle button styles */
+.theme-toggle {
+  background: var(--gray-2);
+  border: 1.5px solid var(--gray-2);
+  border-radius: 50px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+
+body.dark-mode .theme-toggle {
+  background: #1a1d2a;
+  border-color: #2a2d3a;
+}
