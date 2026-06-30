@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quratulain Shaikh — Frontend Designer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Lilita+One&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">QS<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
+        <li><a href="#designs" class="nav-link">Designs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-left reveal">
+        <span class="hero-badge">✦ Frontend Designer & Developer</span>
+        <h1 class="hero-title">
+          <span class="title-bubble">Quratulain</span>
+          <span class="title-bubble title-bubble--stroke">Shaikh</span><span class="title-dot">.</span>
+        </h1>
+        <p class="hero-tagline">Crafting websites that feel as good as they look — for brands that mean business.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See My Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me ↗</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3.92</span>
+            <span class="stat-label">CGPA · GCU</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Projects Live</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">🏆</span>
+            <span class="stat-label">IT Expo Winner</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right reveal delay-2">
+        <div class="hero-img-frame">
+          <div class="hero-img-bg"></div>
+          <div class="hero-img-circle"></div>
+          <div class="hero-img-placeholder">
+            <img src="assets/annie.jpg" alt="Quratulain Shaikh" class="hero-profile-pic" />
+          </div>
+        
+          </div>
+          <div class="floating-tag tag-1">HTML · CSS · JS</div>
+          <div class="floating-tag tag-2">Hyderabad, PK 📍</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-doodles">
+      <div class="doodle d1">⬡</div>
+      <div class="doodle d2">✦</div>
+      <div class="doodle d3">◯</div>
+      <div class="doodle d4">⬡</div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-eyebrow reveal">01 · About me</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-img-wrap">
+            <div class="about-img-bg-shape"></div>
+            <div class="about-img-box">
+                <img src="assets/annie.jpg" alt="Quratulain Shaikh" class="about--pic" />
+            </div>
+          </div>
+          <div class="about-contact-card">
+            <p class="contact-label">Let's build together</p>
+            <a href="mailto:quratulainnshaikh@gmail.com" class="contact-email">quratulainnshaikh@gmail.com</a>
+          </div>
+        </div>
+        <div class="about-right reveal delay-1">
+          <h2 class="about-hello">HELLO<span class="yellow">.</span></h2>
+          <p class="about-bio">I'm <strong>Quratulain Shaikh</strong>, a frontend web designer & developer from Latifabad, Hyderabad. I'm currently a 6th-semester BSIT student at Government College University Hyderabad, where I maintain a 3.92 CGPA while building real products for real clients.</p>
+          <p class="about-bio">I specialise in the food, bakery, and lifestyle space — websites that feel premium, load fast, and actually convert visitors into customers.</p>
+          <div class="about-cards">
+            <div class="about-card">
+              <span class="card-icon">🎓</span>
+              <div>
+                <p class="card-title">BSIT — GCU Hyderabad</p>
+                <p class="card-sub">2024–Present · Semester 6 · CGPA 3.92</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="card-icon">💼</span>
+              <div>
+                <p class="card-title">Junior Design Associate (Former)</p>
+                <p class="card-sub">SkillHive · Promoted from Intern</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="card-icon">🏆</span>
+              <div>
+                <p class="card-title">1st Place — GCU IT Expo</p>
+                <p class="card-sub">WhatsApp Chat Analyzer · Python</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-eyebrow reveal">02 · Skills</div>
+      <h2 class="section-heading reveal">What I work <span class="yellow">with.</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <p class="skill-name">HTML5</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">🎨</div>
+          <p class="skill-name">CSS3</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">⚡</div>
+          <p class="skill-name">JavaScript</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">🐘</div>
+          <p class="skill-name">PHP</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">🗄️</div>
+          <p class="skill-name">MySQL</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">🐍</div>
+          <p class="skill-name">Python</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">✏️</div>
+          <p class="skill-name">Canva</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">🤖</div>
+          <p class="skill-name">AI / Claude</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+        </div>
+      </div>
+      <div class="tools-row reveal">
+        <span class="tool-pill">GitHub</span>
+        <span class="tool-pill">VS Code</span>
+        <span class="tool-pill">Netlify</span>
+        <span class="tool-pill">Node.js</span>
+        <span class="tool-pill">Responsive Design</span>
+        <span class="tool-pill">Data Analysis</span>
+        <span class="tool-pill">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-eyebrow reveal">03 · Services</div>
+      <h2 class="section-heading reveal">What I <span class="yellow">offer.</span></h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3 class="service-title">Website Design & Dev</h3>
+          <p class="service-desc">Responsive, mobile-first websites for small businesses — beautiful, fast, and built to convert.</p>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">🍰</div>
+          <h3 class="service-title">Food & Bakery Sites</h3>
+          <p class="service-desc">Specialised in food brands — with WhatsApp ordering, galleries, and warm premium aesthetics.</p>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Brand & Visual Design</h3>
+          <p class="service-desc">Social media graphics, brand kits, and Canva designs for consistent, professional presence.</p>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">📊</div>
+          <h3 class="service-title">Data & Python Tools</h3>
+          <p class="service-desc">Custom Python scripts for data analysis, automation, and insight generation from your data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-eyebrow reveal">04 · Work</div>
+      <h2 class="section-heading reveal">Selected <span class="yellow">projects.</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card big reveal">
+          <div class="project-img pi-bakery">
+            <div class="project-overlay">
+              <a href="https://bin-sultan-sweets-bakers.netlify.app/" target="_blank" class="project-link-btn">View Live ↗</a>
+            </div>
+            <span class="project-badge">Live</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">HTML/CSS</span>
+              <span class="ptag">Responsive</span>
+              <span class="ptag">WhatsApp CTA</span>
+            </div>
+            <h3 class="project-title">Bin Sultan Sweets & Bakers</h3>
+            <p class="project-desc">Premium bakery website with product showcase, WhatsApp ordering, and mobile-first design. Built and deployed on Netlify.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-img pi-chat">
+            <div class="project-overlay">
+              <a href="https://691d5d87bd68b1d4c55de06c--analyzechatswhatsa.netlify.app/" target="_blank" class="project-link-btn">View Live ↗</a>
+              
+
+            </div>
+            <span class="project-badge award-badge">Award Winner/🏆 1st Place</span>
+         
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Data Analysis</span>
+            </div>
+            <h3 class="project-title">WhatsApp Chat Analyzer</h3>
+            <p class="project-desc">Processes exported chat data to generate statistics and insights. Won 1st place at GCU IT Expo.</p>
+          </div>
+        </div>
+
+        <div class="project-card coming reveal delay-2">
+          <div class="project-img pi-coming">
+            <span class="project-badge coming-badge">Coming Soon</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Cafe</span>
+              <span class="ptag">Web Design</span>
+            </div>
+            <h3 class="project-title">Cafe Website</h3>
+            <p class="project-desc">A lifestyle cafe website with menu showcase, reservation flow, and ambient aesthetic.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Canva Designs Section -->
+<section class="canva-designs section" id="designs">
+  <div class="container">
+    <div class="section-eyebrow reveal">05 · Visual Design</div>
+    <h2 class="section-heading reveal">Canva <span class="yellow">designs.</span></h2>
+    <p class="canva-subtext reveal">Brand visuals, social media graphics & marketing posters — crafted in Canva.</p>
+
+    <div class="canva-grid">
+
+      <div class="canva-card reveal">
+        <div class="canva-img-wrap">
+          <img src="assets/august14.jpg" alt="Canva Design 1" class="canva-img" />
+          <div class="canva-overlay">
+            <span class="canva-tool">Made in Canva ✦</span>
+          </div>
+        </div>
+        <div class="canva-info">
+          <span class="canva-tag">Social Media</span>
+          <h3 class="canva-title">Pakistan Independence Day Graphic</h3>
+          <p class="canva-desc">Designed as a featured competition task during my time at The Skill Hive. The project focuses on a premium cultural theme celebrating Pakistan's 77th Independence Day, blending traditional typography with impactful leadership visuals.</p>
+        </div>
+      </div>
+
+      <div class="canva-card reveal delay-1">
+        <div class="canva-img-wrap">
+          <img src="assets/poster.png" alt="Canva Design 2" class="canva-img" />
+          <div class="canva-overlay">
+            <span class="canva-tool">Made in Canva ✦</span>
+          </div>
+        </div>
+        <div class="canva-info">
+          <span class="canva-tag">Concept Art</span>
+          <h3 class="canva-title">Tech-Futurism Concept Poster</h3>
+          <p class="canva-desc">Created for a creative poster design competition, exploring the intersection of technology and art. The layout visualizes the theme of "The Future of Visual Storytelling" using bold cybernetic elements, vibrant lighting contrasts, and modern layouts.</p>
+        </div>
+      </div>
+
+      <div class="canva-card reveal delay-2">
+        <div class="canva-img-wrap">
+          <img src="assets/wca.png" alt="Canva Design 3" class="canva-img" />
+          <div class="canva-overlay">
+            <span class="canva-tool">Made in Canva ✦</span>
+          </div>
+        </div>
+        <div class="canva-info">
+          <span class="canva-tag">PROJECT UI / INFOGRAPHIC</span>
+          <h3 class="canva-title">WhatsApp Chat Analyzer Poster</h3>
+          <p class="canva-desc">Award-winning marketing and presentation poster designed for our Data Science project at the IT Exhibition. Built to present complex AI features, user activity insights, and smart reports cleanly, helping our team secure the 1st Position in the exhibition.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Experience Timeline -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-eyebrow reveal">06 · Experience</div>
+      <h2 class="section-heading reveal">My <span class="yellow">journey.</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="tl-date">2024 – Present</span>
+            <h3 class="tl-role">BS Information Technology</h3>
+            <p class="tl-company">Government College University Hyderabad</p>
+            <p class="tl-desc">Entering 6th semester · Current CGPA: 3.92 · Learning AI, data analysis, and full-stack web development.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="tl-date">2025 (Promoted)</span>
+            <h3 class="tl-role">Junior Design Associate & Brand Ambassador (Former)</h3>
+            <p class="tl-company">SkillHive</p>
+            <p class="tl-desc">Started as an intern and was promoted to Junior Design Associate. Worked on social media content, branding campaigns, and represented the organization as Brand Ambassador.
+              Resigned after completing tenure.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot award-dot"></div>
+          <div class="timeline-content">
+            <span class="tl-date">2025</span>
+            <h3 class="tl-role">🏆 1st Place — GCU IT Expo</h3>
+            <p class="tl-company">Government College University Hyderabad</p>
+            <p class="tl-desc">Won first position for WhatsApp Chat Analyzer, a Python-based data analysis application presented at the university expo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-eyebrow reveal">07 · Contact</div>
+      <h2 class="section-heading reveal">Let's build something <span class="yellow">beautiful.</span></h2>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-intro">I'm available for freelance projects, collaborations, and internship opportunities. Based in Hyderabad, working with clients worldwide.</p>
+          <div class="contact-links">
+            <a href="mailto:quratulainnshaikh@gmail.com" class="contact-row">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <p class="contact-type">Email</p>
+                <p class="contact-val">quratulainnshaikh@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+923142821945" class="contact-row">
+              <span class="contact-icon">📞</span>
+              <div>
+                <p class="contact-type">Phone / WhatsApp</p>
+                <p class="contact-val">0314-2821945</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/quratulainshaikh-770b2731b" target="_blank" class="contact-row">
+              <span class="contact-icon">💼</span>
+              <div>
+                <p class="contact-type">LinkedIn</p>
+                <p class="contact-val">quratulainshaikh</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" placeholder="e.g. Annie Shaikh" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="you@example.com" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="message">What do you need?</label>
+              <textarea id="message" rows="4" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full">Send Message ↗</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">QS<span class="yellow">.</span></span>
+      <p class="footer-copy">© 2026 Quratulain Shaikh · Hyderabad, Pakistan</p>
+      <p class="footer-made">Designed & built by Quratulain Shaikh | QS.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
